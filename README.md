@@ -1,13 +1,13 @@
 # VidaTec
 Project for HackMTY 2018.
 
-##Contributors
+## Contributors
 - Sergio Diosdado
 - Iñaki Janeiro 
 - Rigoberto Valadez
 - Raúl Castellanos
 
-##Technologies
+## Technologies
 - HTML
 - CSS
 - SASS
