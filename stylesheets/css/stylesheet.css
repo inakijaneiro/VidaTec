@@ -27,15 +27,60 @@ a {
   right: 1vw;
   border: 0.05rem solid #333333;
   border-radius: 16px;
-  background-color: white; }
+  background-color: white;
+  overflow: scroll; }
 
 .card--xl {
   height: 75vh;
-  margin: 24vh auto 0 auto; }
+  margin: 24vh auto 0 auto;
+  overflow: hidden; }
 
 .card--xs {
   height: 15vh;
-  top: 18vh; }
+  top: 18vh;
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.actualizacionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 25%;
+  padding: 2%; }
+
+.actualizacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 5rem;
+  max-width: 50%; }
+
+.linea {
+  height: 100%;
+  width: 4px;
+  border-radius: 10px;
+  margin-left: 2rem;
+  background-color: black; }
 
 .text_box {
   display: block;
