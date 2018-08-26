@@ -31,6 +31,9 @@ a{
     text-decoration: none;
     color: $secondary_color;
 }
+a.white{
+    color: white;
+}
 
 @import "../components/cards.scss";
 @import "../components/textBox.scss";

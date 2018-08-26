@@ -15,6 +15,9 @@ a {
   text-decoration: none;
   color: #00CFED; }
 
+a.white {
+  color: white; }
+
 .card, .card--xl, .card--xs {
   position: absolute;
   height: 65vh;
