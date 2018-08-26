@@ -26,3 +26,28 @@ h1, h2, h3 {
 .card--xs {
   height: 15vh;
   top: 18vh; }
+
+.encabezado {
+  position: absolute;
+  font-size: 53.92px;
+  left: 2vw; }
+
+.text_box {
+  display: block;
+  width: 60vw;
+  margin: .5rem auto;
+  padding: .75rem;
+  font-weight: 700;
+  border-radius: .75rem;
+  border: 1px solid #06309D; }
+
+.logo {
+  width: 40vw;
+  height: 40vw;
+  margin: 20vh auto 2vh auto;
+  background-color: #00CFED;
+  border-radius: 50%;
+  overflow: hidden; }
+  .logo img {
+    width: 100%;
+    height: 100%; }

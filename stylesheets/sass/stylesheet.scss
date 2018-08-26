@@ -11,7 +11,7 @@ $text_light: #eeeeee;
 $fuente_regular: 16px;
 $fuente_ratio: 1.685;
 
-$fuente_grande: $fuente_regular * $fuente_ratio;
+$fuente_grande: $fuente_regular * 2 * $fuente_ratio;
 $fuente_pequeña: $fuente_regular / $fuente_ratio;
 
 //Textos
@@ -25,3 +25,6 @@ h1,h2,h3{
 }
 @import "../components/boton.scss";
 @import "../components/cards.scss";
+@import "../components/encabezado.scss";
+@import "../components/textBox.scss";
+@import "../components/logo.scss";
