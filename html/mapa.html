@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Places Search Box</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/stylesheets/css/normalize.css">
+    <link rel="stylesheet" href="../public/stylesheets/css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+    <title>Mapa</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
         height: 100%;
-        margin: 20vh auto 0 auto;
+        margin: 15vh auto 0 auto;
+        overflow: hidden;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow: hidden;
       }
       #description {
         font-family: Roboto;
@@ -90,8 +96,25 @@
     </style>
   </head>
   <body>
+    
+
+
+
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
     <div id="map"></div>
+    <div class="menu" id="myMenu">
+      <div class="burger close" onclick="closeNav()">
+        <div class="hamburger_1"></div>
+        <div class="hamburger_2"></div>
+        <div class="hamburger_3"></div>
+      </div>
+      <div class="menu_items">
+        <h2>Calendario</h2>
+        <h2>Horario</h2>
+        <h2>Mapa</h2>
+        <h2>Emergencias</h2>
+      </div>
+    </div>
     <script>
       // This example adds a search box to a map, using the Google Place Autocomplete
       // feature. People can enter geographical searches. The search box will return a
@@ -169,6 +192,9 @@
       }
 
     </script>
+
+    
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRSIrnjP8Zp0o5y-YkZdrKeNqPC9XUC_o&libraries=places&callback=initAutocomplete"
          async defer></script>
   </body>

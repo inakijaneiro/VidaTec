@@ -1,17 +1,11 @@
-html {
-  height: 100vh;
-  overflow: hidden; }
-
-body {
-  height: 100%;
-  overflow: hidden; }
-
 * {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow: hidden; }
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -202,10 +196,10 @@ a {
   cursor: pointer; }
 
 .menu {
-  z-index: 100;
+  z-index: 10;
   position: absolute;
-  width: 60%;
-  height: 100%;
+  width: 207px;
+  height: 736px;
   background-color: #06309D;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,12 +210,13 @@ a {
   flex-direction: column;
   padding-left: 2rem;
   padding-top: 2rem;
-  -webkit-transform: translateX(170%);
-  -ms-transform: translateX(170%);
-  transform: translateX(170%);
+  -webkit-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  transform: translateX(200%);
   -webkit-transition: ease-in-out .3s;
   -o-transition: ease-in-out .3s;
-  transition: ease-in-out .3s; }
+  transition: ease-in-out .3s;
+  margin: 0; }
   .menu_items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -231,6 +226,8 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 2rem;
-    color: white; }
+    color: white;
+    margin-right: 0; }
     .menu_items h2 {
-      font-size: 25.6px; }
+      font-size: 25.6px;
+      margin-right: 0; }
