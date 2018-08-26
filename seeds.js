@@ -170,7 +170,7 @@ function seedDb(){
 			//Add Committees
 			for (var i = 0; i < sampleUsers.length; i++)
 			{
-				create(0);
+				create(i);
 			}
 		}
 	});

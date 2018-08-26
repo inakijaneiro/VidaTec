@@ -17,7 +17,7 @@ var userSchema = new mongoose.Schema({
 			homework: String
 		}],
 		event:[{
-			eName: String,
+			name: String,
 			place: String,
 			day:[String],
 			startTime: Date,
