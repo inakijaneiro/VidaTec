@@ -1,7 +1,7 @@
 {
   "name": "vidatec",
   "version": "1.0.0",
-  "description": "Project for HackMTY2018",
+  "description": "Project for HackMTY 2018 Hackathon",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,22 +17,8 @@
   },
   "homepage": "https://github.com/inakijaneiro/VidaTec#readme",
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.18.3",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^2.6.1",
-    "espress": "0.0.0",
     "express": "^4.16.3",
-
     "mongoose": "^5.2.9",
-    "express-session": "^1.15.6",
-    "mongoose": "^5.2.9",
-    "morgan": "^1.9.0",
     "passport": "^0.4.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.24.6",
-    "gulp": "^3.9.1"
   }
 }
