@@ -2,6 +2,9 @@
   "name": "vidatec",
   "version": "1.0.0",
   "description": "Project for HackMTY 2018 Hackathon",
+  "engines": {
+    "node": "8.9.4"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
