@@ -15,16 +15,30 @@ $fuente_grande: $fuente_regular * 2 * $fuente_ratio;
 $fuente_pequeña: $fuente_regular / $fuente_ratio;
 
 //Textos
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    height: 100%;
+}
 *{
     font-family: 'Open Sans', sans-serif;
     font-size: $fuente_regular;
+    box-sizing: border-box;
 }
 h1,h2,h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-@import "../components/boton.scss";
+a{
+    text-decoration: none;
+    color: $secondary_color;
+}
+
 @import "../components/cards.scss";
-@import "../components/encabezado.scss";
 @import "../components/textBox.scss";
 @import "../components/logo.scss";
+@import "../components/boton.scss";
+@import "../components/encabezado.scss";
+@import "../components/containers.scss";

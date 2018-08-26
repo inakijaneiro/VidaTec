@@ -1,16 +1,16 @@
 .boton{
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    border-radius: 0.25rem;
-    line-height: 1.75;
-    width:8rem;
-    height:1.8rem;
-    border: 0.05rem solid black;
-    background-color: $primary_color;
-    box-shadow: 0.09rem 0.09rem 0.09rem $primary_color;
-    padding: 0.30rem 0.80rem;
-
+  display: block;
+  width: 60vw;
+  height: 2.5rem;
+  line-height: 2rem;
+  padding: 0 .80rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.5rem;
+  border: 0.05rem solid black;
+  background-color: $primary_color;
 }
 .boton--sec{
   @extend .boton;
