@@ -1,0 +1,26 @@
+//Textos
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+//Colores
+$primary_color: #06309D;
+$secondary_color: #00CFED;
+$third_color: #AEE8B4;
+$complementary_color: #C5E75F;
+$suplementary_color: #667C00;
+$text_dark: #333333;
+$text_light: #eeeeee;
+
+//Fuentes
+$fuente_regular: 16px;
+$fuente_ratio: 1.685;
+
+$fuente_grande: $fuente_regular * $fuente_ratio;
+$fuente_pequeña: $fuente_regular / $fuente_ratio;
+
+@import "../components/boton.scss"
