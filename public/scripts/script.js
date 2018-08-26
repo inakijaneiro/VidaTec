@@ -15,8 +15,8 @@ password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
 
 function openNav() {
-  document.getElementById("myMenu").style.transform = "translateX(70%)";
+  document.getElementById("myMenu").style.transform = "translateX(100%)";
 }
 function closeNav() {
-  document.getElementById("myMenu").style.transform = "translateX(170%)";
+  document.getElementById("myMenu").style.transform = "translateX(200%)";
 }
