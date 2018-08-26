@@ -1,5 +1,6 @@
 * {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -7,3 +8,21 @@ h1, h2, h3 {
 
 .boton {
   font-weight: 700; }
+
+.card, .card--xl, .card--xs {
+  position: absolute;
+  height: 65vh;
+  width: 98vw;
+  top: 34vh;
+  right: 1vw;
+  border: 0.05rem solid #333333;
+  border-radius: 16px;
+  background-color: white; }
+
+.card--xl {
+  height: 75vh;
+  margin: 24vh auto 0 auto; }
+
+.card--xs {
+  height: 15vh;
+  top: 18vh; }

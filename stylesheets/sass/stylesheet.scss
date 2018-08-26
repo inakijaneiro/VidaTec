@@ -1,12 +1,3 @@
-//Textos
-*{
-    font-family: 'Open Sans', sans-serif;
-}
-h1,h2,h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
 //Colores
 $primary_color: #06309D;
 $secondary_color: #00CFED;
@@ -23,4 +14,14 @@ $fuente_ratio: 1.685;
 $fuente_grande: $fuente_regular * $fuente_ratio;
 $fuente_pequeña: $fuente_regular / $fuente_ratio;
 
-@import "../components/boton.scss"
+//Textos
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fuente_regular;
+}
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+@import "../components/boton.scss";
+@import "../components/cards.scss";

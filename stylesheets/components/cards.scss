@@ -1,0 +1,21 @@
+.card{
+    position: absolute;
+    height: 65vh;
+    width: 98vw;
+    top: 34vh;
+    right: 1vw;
+    border: .05rem solid $text_dark;
+    border-radius: $fuente_regular;
+    background-color: lighten($text_light, 10%);
+
+}
+.card--xl{
+    @extend .card;
+    height: 75vh;
+    margin: 24vh auto 0 auto;
+}
+.card--xs{
+    @extend .card;
+    height: 15vh;
+    top: 18vh;
+}
