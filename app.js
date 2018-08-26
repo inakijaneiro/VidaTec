@@ -5,7 +5,14 @@ var express 				= require('express'),
 	passport				= require('passport'),
 	bodyParser				= require('body-parser'),
 	localStrategy 			= require('passport-local'),
+
 	passportLocalMongoose 	= require('passport-local-mongoose');
+	seedDB					= require('./seeds');
+	seedDB();
+
+	passportLocalMongoose 	= require('passport-local-mongoose'),
+	ejs						= require('ejs');
+
 
 mongoose.connect('mongodb://inakijaneiro:FayghigorgigAf0@ds131942.mlab.com:31942/vidatec', {useNewUrlParser: true });
 app.use(express.static(__dirname + "/public"));
@@ -24,7 +31,7 @@ passport.deserializeUser(User.deserializeUser());
 
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname+'/html/page.html');
+  res.sendFile(__dirname+ '/index.html');
 });
 
 app.get('/:user', function(req, res){
