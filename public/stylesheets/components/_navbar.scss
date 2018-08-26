@@ -1,15 +1,17 @@
 .navbar{
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding-right: 1rem;
     align-items: center;
+    
 }
 .burger{
     cursor: pointer;
 }
 .menu{
     z-index: 10;
-    position: absolute;
+    position: fixed;
     width: 207px;
     height: 736px;
     background-color: $primary_color;
@@ -19,7 +21,8 @@
     padding-top: 2rem;
     transform: translateX(200%);
     transition: ease-in-out .3s;
-    margin: 0;
+    margin: 0 !important;
+
     &_items{
         display: flex;
         flex-direction: column;
@@ -28,7 +31,7 @@
         margin-right: 0;
         & h2{
             font-size: $fuente_regular *1.6;
-            margin-right: 0;
+            margin-right: 0 !important;
         }
     }
 }

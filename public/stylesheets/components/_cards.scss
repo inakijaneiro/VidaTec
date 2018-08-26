@@ -8,11 +8,14 @@
     border-radius: $fuente_regular;
     background-color: lighten($text_light, 10%);
     overflow: scroll;
+    margin: 0 !important;
 }
 .card--xl{
     @extend .card;
-    height: 75vh;
-    margin: 24vh auto 0 auto;
+    height: 80vh;
+    top: 19vh;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 .card--xs{
@@ -22,7 +25,6 @@
     padding-left: 10%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .actualizacionContainer{
     display: flex;
@@ -44,4 +46,10 @@
     border-radius: 10px;
     margin-left: 2rem;
     background-color:black;
+}
+#pac-input{
+    top: 0 !important;
+    left: 54% !important;
+    width: 45%;
+    font-size: $fuente_regular !important;
 }

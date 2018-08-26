@@ -24,11 +24,19 @@ a {
   border: 0.05rem solid #333333;
   border-radius: 16px;
   background-color: white;
-  overflow: scroll; }
+  overflow: scroll;
+  margin: 0 !important; }
 
 .card--xl {
-  height: 75vh;
-  margin: 24vh auto 0 auto;
+  height: 80vh;
+  top: 19vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden; }
 
 .card--xs {
@@ -41,9 +49,7 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-direction: column; }
 
 .actualizacionContainer {
   display: -webkit-box;
@@ -77,6 +83,12 @@ a {
   border-radius: 10px;
   margin-left: 2rem;
   background-color: black; }
+
+#pac-input {
+  top: 0 !important;
+  left: 54% !important;
+  width: 45%;
+  font-size: 16px !important; }
 
 .text_box {
   display: block;
@@ -184,6 +196,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -197,7 +210,7 @@ a {
 
 .menu {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   width: 207px;
   height: 736px;
   background-color: #06309D;
@@ -216,7 +229,7 @@ a {
   -webkit-transition: ease-in-out .3s;
   -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
-  margin: 0; }
+  margin: 0 !important; }
   .menu_items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,4 +243,4 @@ a {
     margin-right: 0; }
     .menu_items h2 {
       font-size: 25.6px;
-      margin-right: 0; }
+      margin-right: 0 !important; }
