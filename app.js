@@ -6,7 +6,8 @@ var express 				= require('express'),
 	bodyParser				= require('body-parser'),
 	localStrategy 			= require('passport-local'),
 	passportLocalMongoose 	= require('passport-local-mongoose');
-
+	seedDB					= require('./seeds');
+	seedDB();
 mongoose.connect('mongodb://inakijaneiro:FayghigorgigAf0@ds131942.mlab.com:31942/vidatec', {useNewUrlParser: true });
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
