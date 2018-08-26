@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../stylesheets/css/normalize.css">
-    <link rel="stylesheet" href="../stylesheets/css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Mapa</title>
-
+    <title>Places Search Box</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
         height: 100%;
-
+        margin: 20vh auto 0 auto;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -45,8 +40,9 @@
         border-radius: 2px 0 0 2px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        outline: noneS        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        background-color: #FFF;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
         font-family: Roboto;
       }
 
@@ -75,7 +71,6 @@
         padding: 0 11px 0 13px;
         text-overflow: ellipsis;
         width: 400px;
-        height: 30px;
       }
 
       #pac-input:focus {
@@ -93,26 +88,10 @@
         width: 345px;
       }
     </style>
-
   </head>
   <body>
-    <div class="card--xs">
-      <div class="actualizacionContainer">
-            <div class="linea"></div>
-            <div class="actualizacion">
-                <p>!!!!!!!!!!!!!!</p> 
-            </div>
-        </div>
-    </div>
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-<!--    <div class="regContainer">-->
-
-    
-      
-
-      <div id="map"></div>
-    
-    
+    <div id="map"></div>
     <script>
       // This example adds a search box to a map, using the Google Place Autocomplete
       // feature. People can enter geographical searches. The search box will return a
@@ -124,7 +103,7 @@
 
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 25.651419, lng: -100.290950},   //Ubicacion de Tec Campus MTY
+          center: {lat: 25.651419, lng: -100.290950}, 
           zoom: 13,
           mapTypeId: 'roadmap'
         });
@@ -132,7 +111,7 @@
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_MIDDLE].push(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
@@ -190,7 +169,6 @@
       }
 
     </script>
-    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRSIrnjP8Zp0o5y-YkZdrKeNqPC9XUC_o&libraries=places&callback=initAutocomplete"
          async defer></script>
   </body>
