@@ -15,18 +15,14 @@ $fuente_grande: $fuente_regular * 2 * $fuente_ratio;
 $fuente_pequeña: $fuente_regular / $fuente_ratio;
 
 //Textos
-html{
-    height: 100vh;
-    overflow: hidden;
-}
-body{
-    height: 100%;
-    overflow: hidden;
-}
 *{
     font-family: 'Open Sans', sans-serif;
     font-size: $fuente_regular;
     box-sizing: border-box;
+}
+body{
+    width: 414px;
+    height: 736px;
     overflow: hidden;
 }
 h1,h2,h3{

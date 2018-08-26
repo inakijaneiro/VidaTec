@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 .menu{
-    z-index: 100;
+    z-index: 10;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -19,11 +19,13 @@
     padding-top: 2rem;
     transform: translateX(170%);
     transition: ease-in-out .3s;
+    margin: 0;
     &_items{
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
         color: white;
+        margin: 0;
         & h2{
             font-size: $fuente_regular *1.6;
         }

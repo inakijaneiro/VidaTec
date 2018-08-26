@@ -1,16 +1,12 @@
-html {
-  height: 100vh;
-  overflow: hidden; }
-
-body {
-  height: 100%;
-  overflow: hidden; }
-
 * {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  width: 414px;
+  height: 736px;
   overflow: hidden; }
 
 h1, h2, h3 {
@@ -202,7 +198,7 @@ a {
   cursor: pointer; }
 
 .menu {
-  z-index: 100;
+  z-index: 10;
   position: absolute;
   width: 60%;
   height: 100%;
@@ -221,7 +217,8 @@ a {
   transform: translateX(170%);
   -webkit-transition: ease-in-out .3s;
   -o-transition: ease-in-out .3s;
-  transition: ease-in-out .3s; }
+  transition: ease-in-out .3s;
+  margin: 0; }
   .menu_items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -231,6 +228,7 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 2rem;
-    color: white; }
+    color: white;
+    margin: 0; }
     .menu_items h2 {
       font-size: 25.6px; }
