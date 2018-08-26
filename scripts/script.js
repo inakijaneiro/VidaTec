@@ -11,6 +11,12 @@ function validatePassword(){
     button.disabled = false;
   }
 }
-
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+
+function openNav() {
+  document.getElementById("myMenu").style.transform = "translateX(70%)";
+}
+function closeNav() {
+  document.getElementById("myMenu").style.transform = "translateX(170%)";
+}

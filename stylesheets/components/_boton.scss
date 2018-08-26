@@ -29,3 +29,39 @@
   background-color: $complementary_color;
   box-shadow: 0.09rem 0.09rem 0.09rem $complementary_color;
 }
+.hamburger_1{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.hamburger_2{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.hamburger_3{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.close{
+  display: block;
+  color: white;
+}
+.burger.close {
+  .hamburger_1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: white;
+  }
+  .hamburger_2 {opacity: 0;}
+
+  .hamburger_3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: white;
+  }
+}

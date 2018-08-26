@@ -21,11 +21,13 @@ html{
 }
 body{
     height: 100%;
+    overflow: hidden;
 }
 *{
     font-family: 'Open Sans', sans-serif;
     font-size: $fuente_regular;
     box-sizing: border-box;
+    overflow: hidden;
 }
 h1,h2,h3{
     font-family: 'Roboto', sans-serif;
@@ -42,3 +44,4 @@ a{
 @import "../components/boton.scss";
 @import "../components/encabezado.scss";
 @import "../components/containers.scss";
+@import "../components/navbar.scss";

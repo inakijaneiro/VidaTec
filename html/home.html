@@ -10,7 +10,27 @@
     <title>Home</title>
 </head>
 <body>
-    <h1 class="encabezado">Hola, Rigo</h1>
+    <div class="menu" id="myMenu">
+        <div class="burger close" onclick="closeNav()">
+            <div class="hamburger_1"></div>
+            <div class="hamburger_2"></div>
+            <div class="hamburger_3"></div>
+        </div>
+        <div class="menu_items">
+            <h2>Calendario</h2>
+            <h2>Horario</h2>
+            <h2>Mapa</h2>
+            <h2>Emergencias</h2>
+        </div>
+    </div>
+    <nav class="navbar" >
+        <h1 class="encabezado">Hola, Rigo</h1>
+        <div class="burger" onclick="openNav()">
+            <div class="hamburger_1"></div>
+            <div class="hamburger_2"></div>
+            <div class="hamburger_3"></div>
+        </div>
+    </nav>
     <div class="card--xs">
         <h2>Math III H</h2>
         <p>José Luis Garza</p>
@@ -68,5 +88,6 @@
             </div>
         </div>
     </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
