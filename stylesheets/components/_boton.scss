@@ -1,3 +1,31 @@
 .boton{
     font-weight: 700;
+    text-align: center;
+    color: white;
+    border-radius: 0.25rem;
+    line-height: 1.75;
+    width:8rem;
+    height:1.8rem;
+    border: 0.05rem solid black;
+    background-color: $primary_color;
+    box-shadow: 0.09rem 0.09rem 0.09rem $primary_color;
+    padding: 0.30rem 0.80rem;
+
+}
+.boton--sec{
+  @extend .boton;
+  background-color: $secondary_color;
+  box-shadow: 0.09rem 0.09rem 0.09rem $secondary_color;
+}
+
+.boton--thi{
+  @extend .boton;
+  background-color: $third_color;
+  box-shadow: 0.09rem 0.09rem 0.09rem $third_color;
+}
+
+.boton--com{
+  @extend .boton;
+  background-color: $complementary_color;
+  box-shadow: 0.09rem 0.09rem 0.09rem $complementary_color;
 }
