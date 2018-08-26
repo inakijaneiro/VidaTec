@@ -7,15 +7,41 @@
     border: .05rem solid $text_dark;
     border-radius: $fuente_regular;
     background-color: lighten($text_light, 10%);
-
+    overflow: scroll;
 }
 .card--xl{
     @extend .card;
     height: 75vh;
     margin: 24vh auto 0 auto;
+    overflow: hidden;
 }
 .card--xs{
     @extend .card;
     height: 15vh;
     top: 18vh;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.actualizacionContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    padding: 2%;
+}
+.actualizacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+    max-width: 50%;
+}
+.linea{
+    height: 100%;
+    width: 4px;
+    border-radius: 10px;
+    margin-left: 2rem;
+    background-color:black;
 }
