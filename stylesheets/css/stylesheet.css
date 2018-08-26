@@ -6,8 +6,34 @@ h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
 
-.boton {
-  font-weight: 700; }
+.boton, .boton--sec, .boton--thi, .boton--com {
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  border-radius: 0.25rem;
+  line-height: 1.75;
+  width: 8rem;
+  height: 1.8rem;
+  border: 0.05rem solid black;
+  background-color: #06309D;
+  -webkit-box-shadow: 0.09rem 0.09rem 0.09rem #06309D;
+  box-shadow: 0.09rem 0.09rem 0.09rem #06309D;
+  padding: 0.30rem 0.80rem; }
+
+.boton--sec {
+  background-color: #00CFED;
+  -webkit-box-shadow: 0.09rem 0.09rem 0.09rem #00CFED;
+  box-shadow: 0.09rem 0.09rem 0.09rem #00CFED; }
+
+.boton--thi {
+  background-color: #AEE8B4;
+  -webkit-box-shadow: 0.09rem 0.09rem 0.09rem #AEE8B4;
+  box-shadow: 0.09rem 0.09rem 0.09rem #AEE8B4; }
+
+.boton--com {
+  background-color: #C5E75F;
+  -webkit-box-shadow: 0.09rem 0.09rem 0.09rem #C5E75F;
+  box-shadow: 0.09rem 0.09rem 0.09rem #C5E75F; }
 
 .card, .card--xl, .card--xs {
   position: absolute;
