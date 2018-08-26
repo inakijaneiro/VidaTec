@@ -26,6 +26,7 @@ app.use(require('express-session')({
 	saveUninitialized: false
 }));
 
+passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -49,6 +50,12 @@ app.post('/register', function(req, res){
 			res.redirect('/home');
 		});
 	});
+});
+
+app.post('/login',passport.authenticate('local',{
+	successRedirect: "/home",
+	failureRedirect: "/"
+}),function(req,res){
 });
 
 app.get('/home', function(req,res){
