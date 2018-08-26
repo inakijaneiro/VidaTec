@@ -10,14 +10,14 @@
 .menu{
     z-index: 10;
     position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 207px;
+    height: 736px;
     background-color: $primary_color;
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
     padding-top: 2rem;
-    transform: translateX(170%);
+    transform: translateX(200%);
     transition: ease-in-out .3s;
     margin: 0;
     &_items{
@@ -25,9 +25,10 @@
         flex-direction: column;
         margin-top: 2rem;
         color: white;
-        margin: 0;
+        margin-right: 0;
         & h2{
             font-size: $fuente_regular *1.6;
+            margin-right: 0;
         }
     }
 }

@@ -5,9 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  width: 414px;
-  height: 736px;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -200,8 +198,8 @@ a {
 .menu {
   z-index: 10;
   position: absolute;
-  width: 60%;
-  height: 100%;
+  width: 207px;
+  height: 736px;
   background-color: #06309D;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,9 +210,9 @@ a {
   flex-direction: column;
   padding-left: 2rem;
   padding-top: 2rem;
-  -webkit-transform: translateX(170%);
-  -ms-transform: translateX(170%);
-  transform: translateX(170%);
+  -webkit-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  transform: translateX(200%);
   -webkit-transition: ease-in-out .3s;
   -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
@@ -229,6 +227,7 @@ a {
     flex-direction: column;
     margin-top: 2rem;
     color: white;
-    margin: 0; }
+    margin-right: 0; }
     .menu_items h2 {
-      font-size: 25.6px; }
+      font-size: 25.6px;
+      margin-right: 0; }

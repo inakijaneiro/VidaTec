@@ -21,9 +21,7 @@ $fuente_pequeña: $fuente_regular / $fuente_ratio;
     box-sizing: border-box;
 }
 body{
-    width: 414px;
-    height: 736px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 h1,h2,h3{
     font-family: 'Roboto', sans-serif;
