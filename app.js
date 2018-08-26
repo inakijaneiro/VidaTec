@@ -26,7 +26,10 @@ app.use(require('express-session')({
 	saveUninitialized: false
 }));
 
-passport.use(new localStrategy(User.authenticate()));
+
+//esta linea jode el login, si la quito jala register pero no login, si la dejo jala register pero no login
+//passport.use(new localStrategy(User.authenticate()));
+//passport.use(User.createStrategy());	
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -40,27 +43,35 @@ app.get('/register', function(req, res){
 });
 
 app.post('/register', function(req, res){
-	User.register(new User({name:req.body.name, email:req.body.email, lastName:req.body.lastname, username: req.body.email}), req.body.password, function(err, user){
+	User.register(new User({name:req.body.name, email:req.body.email, lastName:req.body.lastname, username:req.body.email}), req.body.password, function(err, user){
 		if (err){
 			console.log(err);
 			return res.render('register');
 		}
+
 		passport.authenticate("local")(req,res, function(){
-			req.session.error = req.body.name;
+			req.session.user = req.body.name;
 			res.redirect('/home');
 		});
 	});
 });
 
-app.post('/login',passport.authenticate('local',{
-	successRedirect: "/home",
-	failureRedirect: "/"
-}),function(req,res){
-});
+	app.post('/login',passport.authenticate('local',{
+		successRedirect: "/home",
+		failureRedirect: "/"
+	}),function(req,res){
+	});
 
 app.get('/home', function(req,res){
+	res.render('home', {name: req.session.user});					
+});
 
-	res.render('home', {name: req.session.error});					
+app.get('/emergency', function(req,res){
+	res.render('emergencias');
+});
+
+app.get('/map', function(req, res){
+	res.render('map');
 });
 
 // Port opening
