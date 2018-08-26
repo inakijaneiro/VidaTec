@@ -31,11 +31,29 @@ passport.deserializeUser(User.deserializeUser());
 
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname+ '/index.html');
+  res.render('index');
 });
 
-app.get('/:user', function(req, res){
-	res.render("session");
+app.get('/register', function(req, res){
+	res.render("register");
+});
+
+app.post('/register', function(req, res){
+	User.register(new User({name:req.body.name, email:req.body.email, lastName:req.body.lastname, username: req.body.email}), req.body.password, function(err, user){
+		if (err){
+			console.log(err);
+			return res.render('register');
+		}
+		passport.authenticate("local")(req,res, function(){
+			req.session.error = req.body.name;
+			res.redirect('/home');
+		});
+	});
+});
+
+app.get('/home', function(req,res){
+
+	res.render('home', {name: req.session.error});					
 });
 
 // Port opening
